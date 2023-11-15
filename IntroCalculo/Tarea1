@@ -1,0 +1,413 @@
+\documentclass{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[export]{adjustbox}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{dsfont}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+\usepackage{multicol}
+
+\usepackage{calc}
+\usepackage{tikz}
+\usetikzlibrary{decorations.markings}
+\usepackage{pgfplots}
+\tikzstyle{vertex}=[circle, draw, inner sep=0pt, minimum size=6pt]
+\newcommand{\vertex}{\node[vertex]}
+\newcounter{Angle}
+\pgfplotsset{%
+    compat=newest, %footnotesize
+    tick label style={font=\footnotesize},
+    label style={font=\small},
+    legend style={font=\small},
+    axis x line = center,
+    axis y line = center,
+    every axis/.style={pin distance=1ex},
+    trim axis left}
+
+
+\usepackage[margin=2cm]{geometry}
+
+
+\title{Tarea 1}
+
+\begin{document}
+
+\thispagestyle{empty}
+	
+	\begin{figure}[ht]
+	   \minipage{0.76\textwidth}
+			\includegraphics[width=5cm]{uam_logo.png}
+			\label{EscudoUAM}
+	   \endminipage
+	   \minipage{0.32\textwidth}
+			\includegraphics[height = 2.5cm ,width=5cm]{uam_azcapo.png}
+			\label{EscudoAZC}
+		\endminipage
+	\end{figure}
+	
+	\begin{center}
+	\vspace{0.8cm}
+	\LARGE
+	\textbf{UNIVERSIDAD AUTÓNOMA METROPOLITANA} 
+	
+	\vspace{0.8cm}
+	\LARGE
+	UNIDAD AZCAPOTZALCO \\
+	
+	\vspace{1.7cm}
+	\normalsize	
+	\Large
+	ASIGNATURA \\
+	\vspace{.3cm}
+	\large
+	\textbf{INTRODUCCI\'ON AL C\'ALCULO}
+	
+	\vspace{1cm}	
+	\Large
+	\textbf{TAREA 1}
+
+	\vspace{1cm}
+	\Large	
+	INTEGRANTES \\
+	\vspace{.5cm}
+	\large
+	\textbf{ALEJANDRO ROMERO MERLOS}
+	
+	
+	\vspace{1cm}
+	\Large	
+	GRUPO \\
+	\vspace{.5cm}
+	\large
+	\textbf{CAT82}
+	
+	\vspace{1.3cm}
+	\Large
+	PROFESOR \\
+	\vspace{.3cm}
+	\large
+	\textbf{LINO FELICIANO RESENDIS OCAMPO}
+	\vspace{1.7cm}
+	
+	
+	\textbf {18 DE JULIO DEL 2022}
+	\end{center}
+	
+	
+\newpage
+	\setcounter{page}{1}
+	\pagestyle{plain}
+
+\begin{center}
+\Large \textbf{Introducción al c\'alculo}
+\end{center}
+
+\large \textbf{Ejercicio 1.1.11} \textbf{Intervalos:}
+\vspace{.6cm}
+
+
+\textbf{$\mathbf{I=[-\frac{9}{4}, \sqrt{47})}$,  $\mathbf{J=(-\frac{3}{2}, \infty)}$, $\mathbf{K=(-\frac{5}{2}, \frac{15}{4}]}$
+}
+
+
+\vspace{.6cm}
+
+
+\textbf{Analicemos cada gr\'afica:}
+
+\vspace{1cm}
+
+
+$\mathbf{I=[-\frac{9}{4}, \sqrt{47})}$
+
+\vspace{.6cm}
+
+
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}
+\begin{axis}[
+  axis x line=center,
+  axis y line=none,
+  xtick={-3,-2,...,7.5},
+  ytick={\empty},
+  xlabel={$x$},
+  xlabel style={below right},
+  xmin=-3.5,
+  xmax=8.5,
+]
+\addplot[domain=-2.25:6.8556546] [green] {0};
+\end{axis}
+\end{tikzpicture}%
+}
+
+\vspace{1cm}
+
+
+$\mathbf{J=(-\frac{3}{2}, \infty)}$
+
+\vspace{.6cm}
+
+
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}
+\begin{axis}[
+  axis x line=center,
+  axis y line=none,
+  xtick={-3,-2,...,7.5},
+  xlabel={$x$},
+  xlabel style={below right},
+  xmin=-3.5,
+  xmax=8.5,
+]
+\addplot[domain=-1.5:\infty] [red] {0};
+\end{axis}
+\end{tikzpicture}%
+}
+
+\vspace{1cm}
+
+
+$\mathbf{K=(-\frac{5}{2}, \frac{15}{4}]}$
+
+\vspace{.6cm}
+
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}
+\begin{axis}[
+  axis x line=center,
+  axis y line=none,
+  xtick={-3,-2,...,7.5},
+  xlabel={$x$},
+  xlabel style={below right},
+  xmin=-3.5,
+  xmax=8.5,
+]
+\addplot[domain=-2.5:3.75] [yellow] {0};
+\end{axis}
+\end{tikzpicture}%
+}
+    \vspace{1cm}
+
+
+\begin{enumerate}
+  \item $\mathbf{I \cup J}$
+  
+  \textbf{Como $-\frac{9}{4}$ es menor que $-\frac{3}{2}$ y tenemos que encontrar su uni\'on, entonces $-\frac{9}{4}$ froma parte del intervalo, adem\'as, podemos observar que el intervalo de $J$ es infinito positivo.}
+  \textbf{Por lo cual la uni\'on de ambos conjuntos nos da $\mathbf{[-\frac{9}{4},\infty)}$.}
+  
+  \textbf{Por lo tanto $\mathbf{I \cup J=[-\frac{9}{4},\infty)}$}
+    
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}
+\begin{axis}[
+  axis x line=center,
+  axis y line=none,
+  xtick={-3,-2,...,7.5},
+  xlabel={$x$},
+  xlabel style={below right},
+  xmin=-3.5,
+  xmax=8.5,
+]
+\addplot[domain=-2.25:\infty] [pink] {0};
+\end{axis}
+\end{tikzpicture}%
+}
+
+\newpage
+
+  \item $\mathbf{J \cap K= (-\frac{3}{2}, \frac{15}{4}]}$
+  
+  \textbf{Como queremos tomar la intersecci\'on, es decir los elementos que tienen en com\'un $J$ y $K$ podemos ver que el intervalo $\mathbf{(-\frac{3}{2}, \frac{15}{4}]}$ cumple con esa propiedad, est\'a contenido en ambos conjuntos.}
+  
+  \textbf{Por lo tanto $\mathbf{J \cap K=(-\frac{3}{2}, \frac{15}{4}]}$}
+  
+  \resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}
+\begin{axis}[
+  axis x line=center,
+  axis y line=none,
+  xtick={-3,-2,...,7.5},
+  xlabel={$x$},
+  xlabel style={below right},
+  xmin=-3.5,
+  xmax=8.5,
+]
+\addplot[domain=-1.5:3.75] [yellow] {0};
+\end{axis}
+\end{tikzpicture}%
+}
+    \vspace{1cm}
+    
+  \item $\mathbf{I^{c} \cap K}$
+  
+      \vspace{0.5cm}
+      
+\textbf{Como ya sabemos el intervalo de K, obtendremos el complemento de I}
+
+  \textbf{$I^{c}=$ $\mathbf{(-\infty, -\frac{9}{4})\cup [\sqrt{47}, \infty)}$}
+ 
+  
+  \resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}
+\begin{axis}[
+  axis x line=center,
+  axis y line=none,
+  xtick={-3,-2,...,7.5},
+  xlabel={$x$},
+  xlabel style={below right},
+  xmin=-3.5,
+  xmax=8.5,
+]
+\addplot[domain=-\infty:-2.25] [orange] {0};
+\addplot[domain=6.8556546:\infty] [orange] {0};
+
+\end{axis}
+\end{tikzpicture}%
+}
+
+\vspace{0.7}
+
+\textbf{Podemos ver que $\mathbf{I^{c} \cap K=(-\frac{5}{2},-\frac{9}{4})}$}
+
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}
+\begin{axis}[
+  axis x line=center,
+  axis y line=none,
+  xtick={-3,-2,...,1},
+  xlabel={$x$},
+  xlabel style={below right},
+  xmin=-3.5,
+  xmax=2,
+]
+\addplot[domain=-2.5:-2.25] [green] {0};
+
+\end{axis}
+\end{tikzpicture}%
+}
+
+    \vspace{1cm}
+    
+    
+    \item $\mathbf{K^{c}\cap I^{c}}$
+    
+        \vspace{0.5cm}
+
+    
+    \textbf{Primero, obtendremos el complemento de K}
+    
+    \textbf{$\mathbf{K^{c}=(-\infty, -\frac{5}{2}]\cup (\frac{15}{4}, \infty)}$}
+
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}
+\begin{axis}[
+  axis x line=center,
+  axis y line=none,
+  xtick={-3,-2,...,7.5},
+  xlabel={$x$},
+  xlabel style={below right},
+  xmin=-3.5,
+  xmax=8.5,
+]
+\addplot[domain=-\infty:-2.5] [orange] {0};
+\addplot[domain=3.75:\infty] [orange] {0};
+
+
+\end{axis}
+\end{tikzpicture}%
+}
+
+\textbf{Como ya tenemos $\mathbf{I^{c}}$, podemos ver que $\mathbf{(-\infty,-\frac{5}{2}]}$ es parte de su intersecci\'on. Adem\'as, podemos ver que $\mathbf{[\sqrt{47},\infty)}$ es otro intervalo en com\'un}
+
+\textbf{Por lo tanto $\mathbf{K^{c}\cap I^{c}=(-\infty,-\frac{5}{2}]\cup [\sqrt{47},\infty)}$}
+
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}
+\begin{axis}[
+  axis x line=center,
+  axis y line=none,
+  xtick={-3,-2,...,7.5},
+  xlabel={$x$},
+  xlabel style={below right},
+  xmin=-3.5,
+  xmax=8.5,
+]
+\addplot[domain=-\infty:-2.5] [yellow] {0};
+\addplot[domain=6.85546:\infty] [yellow] {0};
+
+
+\end{axis}
+\end{tikzpicture}%
+}
+
+\newpage
+
+\item$\mathbf{(J\cup K)^{c}}$
+
+\textbf{Primero obtendremos la union de $J$ y $K$}
+
+$\mathbf{J\cup K=(-\frac{5}{2},\infty)}$
+
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}
+\begin{axis}[
+  axis x line=center,
+  axis y line=none,
+  xtick={-3,-2,...,7.5},
+  xlabel={$x$},
+  xlabel style={below right},
+  xmin=-3.5,
+  xmax=8.5,
+]
+\addplot[domain=-2.5:\infty] [yellow] {0};
+
+
+\end{axis}
+\end{tikzpicture}%
+}
+
+\textbf{Por lo tanto $\mathbf{(J\cup K)^{c}=(-\infty,-\frac{5}{2}]}$}
+
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}
+\begin{axis}[
+  axis x line=center,
+  axis y line=none,
+  xtick={-3,-2,...,7.5},
+  xlabel={$x$},
+  xlabel style={below right},
+  xmin=-3.5,
+  xmax=8.5,
+]
+\addplot[domain=-\infty:-2.5] [pink] {0};
+
+\end{axis}
+\end{tikzpicture}%
+}
+
+\item $\mathbf{(I\cup J)\cap K^{c}}$
+
+\textbf{Sabemos que $\mathbf{I \cup J=[-\frac{9}{4},\infty)}$}
+
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}
+\begin{axis}[
+  axis x line=center,
+  axis y line=none,
+  xtick={-3,-2,...,7.5},
+  xlabel={$x$},
+  xlabel style={below right},
+  xmin=-3.5,
+  xmax=8.5,
+]
+\addplot[domain=-2.25:\infty] [pink] 
